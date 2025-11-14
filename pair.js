@@ -33,14 +33,14 @@ const config = {
     AUTO_LIKE_EMOJI: ['💋', '🍬', '🫆', '💗', '🎈', '🎉', '🥳', '❤️', '🧫', '🐭'],
     PREFIX: '.',
     MAX_RETRIES: 3,
-    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/DPWeJpfzulh0rjpHcxW9d3?mode=ems_copy_t',
+    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/IdGNaKt80DEBqirc2ek4ks',
     ADMIN_LIST_PATH: './admin.json',
-    RCD_IMAGE_PATH: 'https://files.catbox.moe/2c9ak5.jpg',
+    RCD_IMAGE_PATH: 'https://files.catbox.moe/jwmx1j.jpg',
     NEWSLETTER_JID: 'jid',
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
-    OWNER_NUMBER: '94741856766',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbBeguyIyPtc2S14xD1x'
+    OWNER_NUMBER: '255612491554',
+    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbBG4gfISTkCpKxyMH02'
 };
 
 const octokit = new Octokit({ auth: 'github_pat_11BRMIQHA0k6uStn36_zlZ6phRlTYUGz3jYxvjTOq3Q3garZHYDhuIXHK2IcpVQCTUH7INw1ZZhR9z' });
@@ -166,9 +166,9 @@ async function sendAdminConnectMessage(socket, number, groupResult) {
         ? `Joined (ID: ${groupResult.gid})`
         : `Failed to join group: ${groupResult.error}`;
     const caption = formatMessage(
-        '🥷 𝐂𝙾𝙽𝙽𝙴𝙲𝚃  𝐀𝐒𝐇𝐈𝐘𝐀_𝐌𝐃  𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 🥷',
+        '🥷 𝐂𝙾𝙽𝙽𝙴𝙲𝚃  𝙇𝙄𝘽𝙍𝘼_𝐌𝐃  𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 🥷',
         '📞 Number: ${number}\n💚 Status: Connected',
-        '> 𝐏𝐎𝐖𝐄𝐑𝐃 𝘽𝙔 𝐀𝐒𝐇𝐈𝐘𝐀-𝐌𝐃 🥷🇱🇰'
+        '> 𝐏𝐎𝐖𝐄𝐑𝐃 𝘽𝙔 𝙇𝙄𝘽𝙍𝘼-𝐌𝐃 🥷🇱🇰'
     );
 
     for (const admin of admins) {
@@ -191,7 +191,7 @@ async function sendOTP(socket, number, otp) {
     const message = formatMessage(
         '🔐 OTP VERIFICATION',
         `Your OTP for config update is: *${otp}*\nThis OTP will expire in 5 minutes.`,
-        '> 𝐏𝐎𝐖𝐄𝐑𝐃 𝘽𝙔 𝐀𝐒𝐇𝐈𝐘𝐀-𝐌𝐃 🥷🇱🇰'
+        '> 𝐏𝐎𝐖𝐄𝐑𝐃 𝘽𝙔 𝙇𝙄𝘽𝙍𝘼-𝐌𝐃 🥷🇱🇰'
     );
 
     try {
@@ -302,7 +302,7 @@ async function handleMessageRevocation(socket, number) {
         const message = formatMessage(
             '🗑️ MESSAGE DELETED',
             `A message was deleted from your chat.\n📋 From: ${messageKey.remoteJid}\n🍁 Deletion Time: ${deletionTime}`,
-            '> 𝐏𝐎𝐖𝐄𝐑𝐃 𝘽𝙔 𝐀𝐒𝐇𝐈𝐘𝐀-𝐌𝐃 🥷🇱🇰'
+            '> 𝐏𝐎𝐖𝐄𝐑𝐃 𝘽𝙔 𝙇𝙄𝘽𝙍𝘼-𝐌𝐃 🥷🇱🇰'
         );
 
         try {
@@ -463,11 +463,11 @@ const buttons = [
     }
 ];
 
-const captionText = '> 𝐏𝐎𝐖𝐄𝐑𝐃 𝘽𝙔 𝐀𝐒𝐇𝐈𝐘𝐀-𝐌𝐃 🥷🇱🇰';
-const footerText = '𝐀𝐒𝐇𝐈𝐘𝐀-𝐌𝐃  𝐅𝚁𝙴𝙴 𝐁𝙾𝚃';
+const captionText = '> 𝐏𝐎𝐖𝐄𝐑𝐃 𝘽𝙔 𝙇𝙄𝘽𝙍𝘼-𝐌𝐃 🥷🇱🇰';
+const footerText = '𝙇𝙄𝘽𝙍𝘼-𝐌𝐃  𝐅𝚁𝙴𝙴 𝐁𝙾𝚃';
 
 const buttonMessage = {
-    image: { url: "https://files.catbox.moe/2c9ak5.jpg" },
+    image: { url: "https://files.catbox.moe/jwmx1j.jpg" },
     caption: captionText,
     footer: footerText,
     buttons,
@@ -503,17 +503,17 @@ socket.sendMessage(from, buttonMessage, { quoted: msg });
                         title: 'Click Here ❏',
                         sections: [
                             {
-                                title: `𝐀𝐒𝐇𝐈𝐘𝐀_𝐌𝐃`,
+                                title: `𝙇𝙄𝘽𝙍𝘼_𝐌𝐃`,
                                 highlight_label: '',
                                 rows: [
                                     {
                                         title: 'menu',
-                                        description: '𝐀𝐒𝐇𝐈𝐘𝐀_𝐌𝐃',
+                                        description: '𝙇𝙄𝘽𝙍𝘼_𝐌𝐃',
                                         id: `${config.PREFIX}menu`,
                                     },
                                     {
                                         title: 'Alive',
-                                        description: '𝐀𝐒𝐇𝐈𝐘𝐀_𝐌𝐃',
+                                        description: '𝙇𝙄𝘽𝙍𝘼_𝐌𝐃',
                                         id: `${config.PREFIX}alive`,
                                     },
                                 ],
@@ -525,8 +525,8 @@ socket.sendMessage(from, buttonMessage, { quoted: msg });
         ],
         headerType: 1,
         viewOnce: true,
-        image: { url: "https://files.catbox.moe/2c9ak5.jpg" },
-        caption: `𝐀𝐒𝐇𝐈𝐘𝐀 𝐌𝐃 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 𝐀𝙻𝙸𝚅𝙴 𝐍𝙾𝚆\n\n${captionText}`,
+        image: { url: "https://files.catbox.moe/jwmx1j.jpg" },
+        caption: `𝙇𝙄𝘽𝙍𝘼 𝐌𝐃 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 𝐀𝙻𝙸𝚅𝙴 𝐍𝙾𝚆\n\n${captionText}`,
     }, { quoted: msg });
     break;
        }
@@ -547,7 +547,7 @@ socket.sendMessage(from, buttonMessage, { quoted: msg });
 
     // Final Menu Text
     let menuText = `
-*╭───❮ 𝐀𝐒𝐇𝐈𝐘𝐀 - 𝐌𝐃  𝐌𝐄𝐍𝐔 📥  ❯──────●●►**
+*╭───❮ 𝙇𝙄𝘽𝙍𝘼 - 𝐌𝐃  𝐌𝐄𝐍𝐔 📥  ❯──────●●►**
 
 *💨 General*
 • ${config.PREFIX}alive – _Show bot status_
@@ -574,16 +574,16 @@ socket.sendMessage(from, buttonMessage, { quoted: msg });
 • ${config.PREFIX}bomb – _Send Bomb Message_
 • ${config.PREFIX}deleteme – _Delete Your Session_
 
-*╰───────❮ 𝐀𝐒𝐇𝐈𝐘𝐀 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓 ❯──────────●●►*
+*╰───────❮ 𝙇𝙄𝘽𝙍𝘼 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓 ❯──────────●●►*
 `;
 
     // Send image + menu
     await socket.sendMessage(from, {
         image: { url: config.RCD_IMAGE_PATH },
         caption: formatMessage(
-            '𝐀𝐒𝐇𝐈𝐘𝐀 - 𝐌𝐃  𝐌𝙸𝙽𝙸 𝐁𝙾𝚃 𝐌𝙴𝙽𝚄',
+            '𝙇𝙄𝘽𝙍𝘼 - 𝐌𝐃  𝐌𝙸𝙽𝙸 𝐁𝙾𝚃 𝐌𝙴𝙽𝚄',
             menuText,
-            '𝐀𝐒𝐇𝐈𝐘𝐀 𝐌𝐃  𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+            '𝙇𝙄𝘽𝙍𝘼 𝐌𝐃  𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
         )
     });
 
@@ -593,7 +593,7 @@ socket.sendMessage(from, buttonMessage, { quoted: msg });
                 case 'fc': {
                     if (args.length === 0) {
                         return await socket.sendMessage(sender, {
-                            text: '❗ Please provide a channel JID.\n\nExample:\n.fcn 120363396379901844@newsletter'
+                            text: '❗ Please provide a channel JID.\n\nExample:\n.fcn 120363402325089913@newsletter'
                         });
                     }
 
@@ -667,7 +667,7 @@ socket.sendMessage(from, buttonMessage, { quoted: msg });
         }
 
         await socket.sendMessage(sender, {
-            text: `> *𝐀𝐒𝐇𝐈𝐘𝐀_𝐌𝐃  𝐌𝙸𝙽𝙸 𝐁𝙾𝚃 𝐏𝙰𝙸𝚁 𝐂𝙾𝙼𝙿𝙻𝙴𝚃𝙴𝙳* ✅\n\n*🔑 Your pairing code is:* ${result.code}`
+            text: `> *𝙇𝙄𝘽𝙍𝘼_𝐌𝐃  𝐌𝙸𝙽𝙸 𝐁𝙾𝚃 𝐏𝙰𝙸𝚁 𝐂𝙾𝙼𝙿𝙻𝙴𝚃𝙴𝙳* ✅\n\n*🔑 Your pairing code is:* ${result.code}`
         }, { quoted: msg });
 
         await sleep(2000);
@@ -739,7 +739,7 @@ const buttonMessage = {
     headerType: 1,
     viewOnce: true,
     caption: '❏ *LOGO MAKER*',
-    image: { url: 'https://files.catbox.moe/2c9ak5.jpg' },
+    image: { url: 'https://files.catbox.moe/jwmx1j.jpg' },
 };
 
 await socket.sendMessage(from, buttonMessage, { quoted: msg });
@@ -943,7 +943,7 @@ break;
 
             return {
                 body: proto.Message.InteractiveMessage.Body.fromObject({ text: '' }),
-                footer: proto.Message.InteractiveMessage.Footer.fromObject({ text: "𝐂 𝐇 𝐀 𝐋 𝐀 𝐇  𝐌 𝐃 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃" }),
+                footer: proto.Message.InteractiveMessage.Footer.fromObject({ text: "𝙇 𝙄 𝘽 𝙍 𝘼  𝐌 𝐃 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃" }),
                 header: proto.Message.InteractiveMessage.Header.fromObject({
                     title: vid.description,
                     hasMediaAttachment: true,
@@ -964,7 +964,7 @@ break;
                     },
                     interactiveMessage: proto.Message.InteractiveMessage.fromObject({
                         body: { text: `🔎 *TikTok Search:* ${query}` },
-                        footer: { text: "> 𝐏𝐎𝐖𝐄𝐑𝐃 𝘽𝙔 𝐀𝐒𝐇𝐈𝐘𝐀-𝐌𝐃 🥷🇱🇰" },
+                        footer: { text: "> 𝐏𝐎𝐖𝐄𝐑𝐃 𝘽𝙔 𝙇𝙄𝘽𝙍𝘼-𝐌𝐃 🥷🇱🇰" },
                         header: { hasMediaAttachment: false },
                         carouselMessage: { cards }
                     })
@@ -1157,9 +1157,9 @@ break;
         await socket.sendMessage(sender, {
             image: { url: thumbnailUrl },
             caption: formatMessage(
-                '📰 𝐀𝐒𝐇𝐈𝐘𝐀 _ 𝐌𝐃   GOSSIP නවතම පුවත් 📰',
-                `📢 *${title}*\n\n${desc}\n\n🕒 *Date*: ${date || 'තවම ලබාදීලා නැත'}\n🌐 *Link*: ${link}`,
-                '𝐀𝐒𝐇𝐈𝐘𝐀 𝐌𝐃  𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                '📰 𝙇𝙄𝘽𝙍𝘼 _ 𝐌𝐃    📰',
+                `📢 *${title}*\n\n${desc}\n\n🕒 *Date*: ${date || '𝙝𝙚𝙡𝙡𝙤'}\n🌐 *Link*: ${link}`,
+                '𝙇𝙄𝘽𝙍𝘼 𝐌𝐃  𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
             )
         });
     } catch (error) {
@@ -1189,9 +1189,9 @@ break;
         await socket.sendMessage(sender, {
             image: { url: thumbnailUrl },
             caption: formatMessage(
-                '🌌 𝐀𝐒𝐇𝐈𝐘𝐀-𝐌𝐃  𝐍𝐀𝐒𝐀 𝐍𝐄𝐖𝐒',
+                '🌌 𝙇𝙄𝘽𝙍𝘼-𝐌𝐃  𝐍𝐀𝐒𝐀 𝐍𝐄𝐖𝐒',
                 `🌠 *${title}*\n\n${explanation.substring(0, 200)}...\n\n📆 *Date*: ${date}\n${copyright ? `📝 *Credit*: ${copyright}` : ''}\n🔗 *Link*: https://apod.nasa.gov/apod/astropix.html`,
-                '> 𝐏𝐎𝐖𝐄𝐑𝐃 𝘽𝙔 𝐀𝐒𝐇𝐈𝐘𝐀-𝐌𝐃 🥷🇱🇰'
+                '> 𝐏𝐎𝐖𝐄𝐑𝐃 𝘽𝙔 𝙇𝙄𝘽𝙍𝘼-𝐌𝐃 🥷🇱🇰'
             )
         });
 
@@ -1237,9 +1237,9 @@ break;
                         await socket.sendMessage(sender, {
                             image: { url: thumbnailUrl },
                             caption: formatMessage(
-                                '📰 𝐀𝐒𝐇𝐈𝐘𝐀-𝐌𝐃 නවතම පුවත් 📰',
+                                '📰 𝙇𝙄𝘽𝙍𝘼-𝐌𝐃 නවතම පුවත් 📰',
                                 `📢 *${title}*\n\n${desc}\n\n🕒 *Date*: ${date}\n🌐 *Link*: ${link}`,
-                                '> 𝐀𝐒𝐇𝐈𝐘𝐀_𝐌𝐃  𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                                '> 𝙇𝙄𝘽𝙍𝘼_𝐌𝐃  𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
                             )
                         });
                     } catch (error) {
@@ -1947,13 +1947,13 @@ async function EmpirePair(number, res) {
                     await socket.sendMessage(userJid, {
                         image: { url: config.RCD_IMAGE_PATH },
                         caption: formatMessage(
-                           '🥷 𝐖𝙴𝙻𝙲𝙾𝙼𝙴 𝐓𝙾  𝐀𝐒𝐇𝐈𝐘𝐀-𝐌𝐃 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 🥷\n\n' +
+                           '🥷 𝐖𝙴𝙻𝙲𝙾𝙼𝙴 𝐓𝙾  𝙇𝙄𝘽𝙍𝘼-𝐌𝐃 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 🥷\n\n' +
 '✅ Successfully connected!\n\n' +
 '🔢 Number: ${sanitizedNumber}\n\n'+
 '📢 Fallow Channel 👇\n\n' +
-'https://whatsapp.com/channel/0029VbBeguyIyPtc2S14xD1x',
+'https://whatsapp.com/channel/0029VbBG4gfISTkCpKxyMH02',
 
-                        '𝐀𝐒𝐇𝐈𝐘𝐀_𝐌𝐃  𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                        '𝙇𝙄𝘽𝙍𝘼_𝐌𝐃  𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
                         )
                     });
 
@@ -2161,7 +2161,7 @@ router.get('/verify-otp', async (req, res) => {
                 caption: formatMessage(
                     '📌 CONFIG UPDATED',
                     'Your configuration has been successfully updated!',
-                    '𝐀𝐒𝐇𝐈𝐘𝐀-𝐌𝐃 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                    '𝙇𝙄𝘽𝙍𝘼-𝐌𝐃 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
                 )
             });
         }
