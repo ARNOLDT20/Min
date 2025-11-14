@@ -1,7 +1,7 @@
 {
-  "name": "ASHIYA-MD ",
+  "name": "libra-md ",
   "version": "1.0.0",
-  "description": "ASHIYA-MD WhatsApp Bot with Multi-Number Support",
+  "description": "LIBRA-MD WhatsApp Bot with Multi-Number Support",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -35,7 +35,7 @@
     "bot",
     "multi-device",
     "baileys",
-    "ASHIYA-MD"
+    "libra-md"
   ],
   "author": "Your Name",
   "license": "MIT"
