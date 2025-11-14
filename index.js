@@ -23,7 +23,7 @@ app.listen(PORT, '0.0.0.0', () => {
     console.log(`
 Don't Forget To Give Star ‼️
 
-> 𝐏𝐎𝐖𝐄𝐑𝐃 𝘽𝙔 𝙎𝙄𝙇𝘼-𝐌𝐃 🥷🇱🇰
+> 𝐏𝐎𝐖𝐄𝐑𝐃 𝘽𝙔 BLAZEADVTECH 🥷🇱🇰
 
 Server running on http://0.0.0.0:` + PORT);
 });
