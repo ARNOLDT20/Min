@@ -33,13 +33,13 @@ const config = {
     AUTO_LIKE_EMOJI: ['💋', '🍬', '🫆', '💗', '🎈', '🎉', '🥳', '❤️', '🧫', '🐭'],
     PREFIX: '.',
     MAX_RETRIES: 3,
-    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/IdGNaKt80DEBqirc2ek4ks',
+    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/DJMA7QOT4V8FuRD6MpjPpt?mode=wwt',
     ADMIN_LIST_PATH: './admin.json',
     RCD_IMAGE_PATH: 'https://files.catbox.moe/1lhfeh.jpg',
     NEWSLETTER_JID: 'jid',
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
-    OWNER_NUMBER: '255612491554',
+    OWNER_NUMBER: '255627417402',
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb6H6jF9hXEzZFlD6F3d'
 };
 
